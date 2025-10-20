@@ -1,7 +1,8 @@
 "use client";
-import { motion } from 'motion/react';
-import { ArrowRight, Sparkles } from 'lucide-react';
-import { Button } from './ui/button';
+
+import { motion, cubicBezier } from "motion/react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { Button } from "./ui/button";
 
 export function Hero() {
   const containerVariants = {
@@ -22,13 +23,16 @@ export function Hero() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.22, 1, 0.36, 1],
+        ease: cubicBezier(0.22, 1, 0.36, 1), // ✅ fixed easing syntax
       },
     },
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-black to-blue-950">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-black to-blue-950"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -39,7 +43,7 @@ export function Hero() {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: 'linear',
+            ease: "linear",
           }}
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
         />
@@ -51,7 +55,7 @@ export function Hero() {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: 'linear',
+            ease: "linear",
           }}
           className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
         />
@@ -66,7 +70,10 @@ export function Hero() {
         animate="visible"
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
-        <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-8">
+        <motion.div
+          variants={itemVariants}
+          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-8"
+        >
           <Sparkles className="w-4 h-4 text-blue-400" />
           <span className="text-blue-300">Crafting Digital Excellence</span>
         </motion.div>
@@ -75,9 +82,9 @@ export function Hero() {
           variants={itemVariants}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-6 tracking-tight"
         >
-          We Build{' '}
+          We Build{" "}
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Tomorrow's
+            Tomorrow&apos;s
           </span>
           <br />
           Digital Solutions
@@ -98,7 +105,11 @@ export function Hero() {
             Start Your Project
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button size="lg" variant="outline" className="border-gray-700 text-gray-300 hover:bg-gray-800">
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-gray-700 text-gray-300 hover:bg-gray-800"
+          >
             View Our Work
           </Button>
         </motion.div>
@@ -109,16 +120,18 @@ export function Hero() {
           className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto"
         >
           {[
-            { number: '150+', label: 'Projects Delivered' },
-            { number: '50+', label: 'Happy Clients' },
-            { number: '5+', label: 'Years Experience' },
+            { number: "150+", label: "Projects Delivered" },
+            { number: "50+", label: "Happy Clients" },
+            { number: "5+", label: "Years Experience" },
           ].map((stat, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
               className="p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
             >
-              <div className="text-3xl md:text-4xl text-white mb-2">{stat.number}</div>
+              <div className="text-3xl md:text-4xl text-white mb-2">
+                {stat.number}
+              </div>
               <div className="text-sm text-gray-400">{stat.label}</div>
             </motion.div>
           ))}
