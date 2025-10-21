@@ -100,17 +100,17 @@ export function Contact() {
                 {
                   icon: Mail,
                   title: 'Email',
-                  content: 'hello@swarddverse.com',
+                  content: 'swardVerse@gmail.com',
                 },
                 {
                   icon: Phone,
                   title: 'Phone',
-                  content: '+1 (555) 123-4567',
+                  content: '+880 1770-716570, +880 1521-718161',
                 },
                 {
                   icon: MapPin,
                   title: 'Office',
-                  content: 'San Francisco, CA 94102',
+                  content: 'KUET, Khulna - 9203',
                 },
               ].map((item, index) => {
                 const Icon = item.icon;

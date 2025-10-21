@@ -94,7 +94,7 @@ export function Hero() {
           variants={itemVariants}
           className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto"
         >
-          Transforming ideas into exceptional software, stunning web applications, and cutting-edge robotics solutions
+          Transforming ideas into exceptional app, stunning web applications, software and cutting-edge robotics solutions
         </motion.p>
 
         <motion.div

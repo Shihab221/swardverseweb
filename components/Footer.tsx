@@ -10,7 +10,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-xl mb-4">Swarddverse</h3>
+            <h3 className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-xl mb-4">swardVerse</h3>
             <p className="text-gray-400">
               Crafting digital excellence through innovative software, web, and robotics solutions.
             </p>
@@ -58,7 +58,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Swarddverse. All rights reserved.
+            © {currentYear} swardVerse. All rights reserved.
           </p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export function Footer() {
             transition={{ delay: 0.5 }}
             className="text-gray-400 text-sm flex items-center gap-2"
           >
-            Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by Swarddverse
+            Made by<span className='bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'>swardVerse</span> 
           </motion.p>
         </div>
       </div>

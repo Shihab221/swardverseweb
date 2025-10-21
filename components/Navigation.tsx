@@ -23,6 +23,7 @@ export function Navigation() {
     { name: 'Projects', href: '#projects' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Team', href: '/team' },
   ];
 
   return (
@@ -40,9 +41,9 @@ export function Navigation() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-2xl text-white tracking-tight"
+            className="text-2xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent tracking-tight"
           >
-            Swarddverse
+            swardVerse
           </motion.div>
 
           {/* Desktop Navigation */}

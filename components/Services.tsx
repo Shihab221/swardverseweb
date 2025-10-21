@@ -12,8 +12,8 @@ export function Services() {
   const services = [
     {
       icon: Code2,
-      title: 'Software Development',
-      description: 'Custom software solutions tailored to your business needs with cutting-edge technologies and best practices.',
+      title: 'App Development',
+      description: 'Custom android & iOS solutions tailored to your business needs with cutting-edge technologies and best practices.',
       image: 'https://images.unsplash.com/photo-1558095625-f882e3436125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzb2Z0d2FyZXxlbnwxfHx8fDE3NjA5NDU3NjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
       color: 'from-blue-500 to-cyan-500',
     },
