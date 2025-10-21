@@ -72,7 +72,7 @@ export function Hero() {
       >
         <motion.div
           variants={itemVariants}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-8 "
+          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-8 mt-10 sm:mt-0 "
         >
           <Sparkles className="w-4 h-4 text-blue-400" />
           <span className="text-blue-300">Crafting Digital Excellence</span>
