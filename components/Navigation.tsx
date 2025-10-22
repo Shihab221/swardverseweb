@@ -24,6 +24,7 @@ export function Navigation() {
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
     { name: 'Team', href: '/team' },
+    { name: 'Careers', href: '/careers' },
   ];
 
   return (
